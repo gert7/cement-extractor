@@ -1,12 +1,7 @@
 use std::{
-    array,
-    ffi::OsStr,
     fs::{create_dir_all, File},
-    io::{BufReader, LineWriter, Read, Result, Seek, SeekFrom, Write},
+    io::{Read, Result, Seek, SeekFrom, Write},
     path::{Component, Path, PathBuf},
-    str::from_utf8,
-    string,
-    sync::Arc,
 };
 
 use byteorder::{LittleEndian, ReadBytesExt};
